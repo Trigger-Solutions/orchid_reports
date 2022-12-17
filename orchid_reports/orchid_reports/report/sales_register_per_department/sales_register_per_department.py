@@ -415,8 +415,6 @@ def get_invoices(filters, additional_query_columns):
 		additional_query_columns = ", " + ", ".join(additional_query_columns)
 
 	conditions = get_conditions(filters)
-	from console import console
-	console(conditions).log()
 	user_permition = frappe.db.get_value('User Permission',{'user': frappe.session.user,'allow':'Item Group'},'for_value')
 	if not user_permition:
 		return frappe.db.sql(

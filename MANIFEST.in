@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include orchid_reports *.css
+recursive-include orchid_reports *.csv
+recursive-include orchid_reports *.html
+recursive-include orchid_reports *.ico
+recursive-include orchid_reports *.js
+recursive-include orchid_reports *.json
+recursive-include orchid_reports *.md
+recursive-include orchid_reports *.png
+recursive-include orchid_reports *.py
+recursive-include orchid_reports *.svg
+recursive-include orchid_reports *.txt
+recursive-exclude orchid_reports *.pyc
